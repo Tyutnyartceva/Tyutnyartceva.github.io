@@ -1451,7 +1451,7 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
 @media (max-width: 578px) and (min-width: 320px){
     .conteiner {
         border: 1px solid;
-        width: 570px;
+        width: 100%;
     }
 
     label {
@@ -1467,7 +1467,7 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
 
     .slider-header_nav-list {
         visibility: hidden;
-        margin: 43px 0 0 10px;
+        margin: 36px 0 0 10px;
         width: 250px;
         flex-direction: column;
         justify-content: flex-end;
@@ -1527,6 +1527,7 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
     }
 
     .service {
+        width: 260px;
         margin: 10px 5px 10px 0;
     }
 
