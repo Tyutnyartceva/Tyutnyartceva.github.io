@@ -78,10 +78,11 @@
         url('../font/roboto/roboto.ttf.woff') format('woff');
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
+
 .conteiner {
     width: 1920px;
     margin: 0 auto 0 auto;
@@ -371,9 +372,11 @@ div.slider-header-pagination > a:nth-child(2) {
     box-sizing: border-box;
     margin: 0 33px 0 0;
 }
-.servis-link{
+
+.servis-link {
     text-decoration: none;
 }
+
 .service:nth-child(4) {
     margin: 0;
 }
@@ -813,13 +816,20 @@ video {
     width: 100%;
     box-sizing: border-box;
     padding: 0 400px 0 400px;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+*/
 }
+
 .for_mb_device:after {
     content: "";
     display: block;
     width: 100%;
     clear: both;
 }
+
 .for_mb_device-content {
     width: 690px;
     padding: 0;
@@ -843,9 +853,11 @@ video {
     line-height: 28px;
     margin: 0 0 40px 0;
 }
+
 .for_mb_device-img {
- float: left;
-    }
+    float: left;
+}
+
 details {
     width: 560px;
     color: #8c8c8c;
@@ -1447,10 +1459,9 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
 }
 
 
-@media (max-width: 578px) and (min-width: 320px){
+@media (max-width: 578px) {
     .conteiner {
-        width: 100%;
-        box-sizing: content-box;
+        width: 578px;
     }
 
     label {
@@ -1503,7 +1514,6 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
         height: 100px;
         display: flex;
         justify-content: space-between;
-        /*        flex-direction: row-reverse;*/
         margin: 0;
     }
 
@@ -1575,48 +1585,55 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
         display: none;
     }
 
-    .for_mb_device{
+    .for_mb_device {
         display: flex;
         padding: 0;
-         flex-direction: row;
+        flex-direction: row;
         flex-wrap: wrap;
-        align-items:flex-end;
+        align-items: flex-end;
         box-sizing: border-box;
         margin: 0 0 30px 0;
     }
-     .for_mb_device-content {
-         box-sizing: border-box;
+
+    .for_mb_device-content {
+        box-sizing: border-box;
         width: 100%;
         padding: 0;
         order: -1;
     }
-     .for_mb_device-img {
-         box-sizing: border-box;
+
+    .for_mb_device-img {
+        box-sizing: border-box;
         display: flex;
         width: 35%;
         height: 30%;
         margin: 0 40px 0 20px;
     }
-     .for_mb_device-title {
-         box-sizing: border-box;
+
+    .for_mb_device-title {
+        box-sizing: border-box;
         text-align: center;
     }
+
     .for_mb_device-text {
         box-sizing: border-box;
         margin: auto auto 30px auto;
         width: 95%;
         text-align: justify;
     }
+
     .details1 {
         display: flex;
         flex-direction: column;
         width: 50%;
     }
+
     details {
         width: 100%;
         margin: 0;
     }
-        summary {
+
+    summary {
         width: 100%;
         margin: 0;
     }
