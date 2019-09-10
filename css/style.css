@@ -808,14 +808,24 @@ video {
 .for_mb_device {
     width: 100%;
     box-sizing: border-box;
+    padding: 0 400px 0 400px;
+/*
     display: flex;
     justify-content: center;
     align-items: flex-end;
+*/
 }
-
+.for_mb_device:after {
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
 .for_mb_device-content {
     width: 690px;
-    padding: 0 0 100px 0;
+    padding: 0;
+    float: right;
+    padding: 10% 0 0 0;
 }
 
 .for_mb_device-title {
@@ -834,7 +844,9 @@ video {
     line-height: 28px;
     margin: 0 0 40px 0;
 }
-
+.for_mb_device-img {
+ float: left;
+    }
 details {
     width: 560px;
     color: #8c8c8c;
@@ -843,6 +855,7 @@ details {
     font-weight: 300;
     line-height: 32px;
     margin: 0 0 0 100px;
+    float: right;
 }
 
 summary {
@@ -1435,7 +1448,7 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
 }
 
 
-@media (max-width: 578px) {
+@media (max-width: 578px) and (min-width: 320px){
     .conteiner {
         border: 1px solid;
         width: 570px;
@@ -1562,46 +1575,111 @@ body > div.conteiner > footer > section.footer2 > ul.footer_designed-list > li:n
         display: none;
     }
 
+    .for_mb_device{
+        display: flex;
+        padding: 0;
+         flex-direction: row;
+        flex-wrap: wrap;
+        align-items:flex-end;
+        box-sizing: border-box;
+        margin: 0 0 30px 0;
+    }
+     .for_mb_device-content {
+         box-sizing: border-box;
+        width: 100%;
+        padding: 0;
+        order: -1;
+    }
+     .for_mb_device-img {
+         box-sizing: border-box;
+        display: flex;
+        width: 35%;
+        height: 30%;
+        margin: 0 40px 0 20px;
+    }
+     .for_mb_device-title {
+         box-sizing: border-box;
+        text-align: center;
+    }
+    .for_mb_device-text {
+        box-sizing: border-box;
+        margin: auto auto 30px auto;
+        width: 95%;
+        text-align: justify;
+    }
+    .details1 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    details {
+        width: 100%;
+        margin: 0;
+    }
+        summary {
+        width: 100%;
+        margin: 0;
+    }
+/*
+
     .for_mb_device {
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
         margin: 0 0 30px 0;
+            display: flex;
+    align-items: flex-end;
     }
+*/
 
+
+/*
     .for_mb_device-img {
         width: 35%;
         height: 30%;
         margin: 0 40px 0 0;
     }
+*/
 
+/*
     .for_mb_device-content {
         width: 90%;
         padding: 0;
         order: -1;
     }
+*/
 
+/*
     .for_mb_device-title {
         text-align: center;
     }
+*/
 
+/*
     .for_mb_device-text {
         text-align: justify;
     }
+*/
 
+/*
     details {
         width: 100%;
         margin: 0;
     }
+*/
+/*
 
     summary {
         width: 100%;
         margin: 0;
     }
+*/
 
+/*
     .details1 {
         width: 50%;
     }
+*/
 
     .counters {
         display: none;
