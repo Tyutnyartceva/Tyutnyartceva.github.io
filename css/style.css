@@ -813,11 +813,6 @@ video {
     width: 100%;
     box-sizing: border-box;
     padding: 0 400px 0 400px;
-/*
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-*/
 }
 .for_mb_device:after {
     content: "";
