@@ -78,6 +78,10 @@
         url('../font/roboto/roboto.ttf.woff') format('woff');
 }
 
+body{
+    margin: 0;
+    padding: 0;
+}
 .conteiner {
     width: 1920px;
     margin: 0 auto 0 auto;
